@@ -71,6 +71,10 @@ def run_discord_client():
     async def doSomething(action):
         print("hello world")
 
+    @client.event
+    async def makeSomething(action):
+        print("do something pls")
+
     client.run(TOKEN)
 
 
