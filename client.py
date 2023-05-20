@@ -67,7 +67,10 @@ def run_discord_client():
             await send_message(message, user_message, is_private=True)
         else:
             await send_message(message, user_message, is_private=False)
-    
+    @client.event        
+    async def doSomething(action):
+        print("hello world")
+
     client.run(TOKEN)
 
 
