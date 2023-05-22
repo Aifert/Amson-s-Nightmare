@@ -49,7 +49,12 @@ def run_discord_client():
     @client.tree.command(name = 'buttonmenu')
     #button to be clicked
     async def buttonmenu(interaction : discord.Interaction):
-        await interaction.response.send_message(content = "Here's my button menu", view = Menu())
+        view1 = Menu()
+        rick_button = discord.ui.Button(label = "rick roll", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        amson_button = discord.ui.Button(label = "This is what amson is doing soon", url = "https://www.youtube.com/watch?v=xjkWcjeRAN4")
+        view1.add_item(rick_button)
+        view1.add_item(amson_button)
+        await interaction.response.send_message(content = "Here's my button menu", view = view1)
 
     @client.event
     async def on_message(message):
@@ -67,14 +72,7 @@ def run_discord_client():
             await send_message(message, user_message, is_private=True)
         else:
             await send_message(message, user_message, is_private=False)
-    @client.event        
-    async def doSomething(action):
-        print("hello world")
-
-    @client.event
-    async def makeSomething(action):
-        print("do something pls")
-
+            
     client.run(TOKEN)
 
 
