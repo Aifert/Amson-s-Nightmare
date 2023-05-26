@@ -17,10 +17,13 @@ def handle_response(message) -> str:
         return "`This is a help message that you can modify.`!"
     
     if p_message == 'amson':
-        str = ''
+        str = 'I will now show you WHAT is amson\n'
         i=0
+        count = 0
         while i <= 10:
+            count += 1
             str += 'AMSON IS A FUCKING IDIOT\n'
+            str += (f'This is me saying amson is fucking dumb {count} time\n')
             i+=1
         return str
     
@@ -39,4 +42,7 @@ def handle_response(message) -> str:
         return f"she is a fat pig"
     
     if p_message == 'what is amson doing soon?':
-        return f"eahttps://www.youtube.com/watch?v=xjkWcjeRAN4"
+        return f"https://www.youtube.com/watch?v=xjkWcjeRAN4"
+    
+    if p_message == 'good morning':
+        return f"Heres ur cup of coffee daddy, have a good day - Jamie"
