@@ -1,11 +1,11 @@
 import random
 
-def handle_response(message) -> str:
+def handle_response(message, username) -> str:
     #what does -> str do?
     p_message = message.lower()
 
     if p_message == 'hello':
-        return 'hey THEREEEEE'
+        return f'hey THEREEEEE {username}'
     
     if p_message == 'roll':
         return (f'Here is a random integer {random.randint(1,6)}')
