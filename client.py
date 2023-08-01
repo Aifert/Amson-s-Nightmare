@@ -50,7 +50,7 @@ def run_discord_client():
     #button to be clicked
     async def auspost(interaction : discord.Interaction):
         view1 = Menu()
-        # rick_button = discord.ui.Button(label = "rick roll", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        rick_button = discord.ui.Button(label = "rick roll", url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ")
         # amson_button = discord.ui.Button(label = "This is what amson is doing soon", url = "https://www.youtube.com/watch?v=xjkWcjeRAN4")
         auspost_label_button = discord.ui.Button(label = "Start Making Shipping Label", url = "https://auspost.com.au/mypost-business/shipping-and-tracking/orders/add/retail")
         view1.add_item(auspost_label_button)
