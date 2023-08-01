@@ -5,7 +5,7 @@ def handle_response(message, username) -> str:
     p_message = message.lower()
 
     if p_message == 'hello':
-        return f'hey THEREEEEE {username}'
+        return f'hey THEREEEEE @{username}'
     
     if p_message == 'roll':
         return (f'Here is a random integer {random.randint(1,6)}')
@@ -46,3 +46,6 @@ def handle_response(message, username) -> str:
     
     if p_message == 'good morning':
         return f"Heres ur cup of coffee daddy, have a good day - Jamie"
+    
+    if p_message == 'where is amson now?':
+        return f'PRISON PRISON PRISON PRISON PRISON'
