@@ -14,10 +14,10 @@ This bot was made to make fun of my friend who is going to be serving in the Nat
 - Many More
 
 # Photos
- spam "Amson is a f*cking idiot" when you say Amson
+ spam "Amson is a f*cking idiot" 
 ![image](https://github.com/Aifert/Discord-Bot/assets/134128588/ce168f19-6c95-4ee1-b20a-9f5540895e23)
 
- Send a youtube video titled "Ah Boys To Men" when you ask the bot what is amson doing soon?
+ Send a youtube video titled "Ah Boys To Men" 
 ![image](https://github.com/Aifert/Discord-Bot/assets/134128588/fa2be5c6-a4a8-4657-ad04-afee12a6d3e2)
 
  A rick roll button
