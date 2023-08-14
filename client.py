@@ -17,7 +17,7 @@ async def send_message(message, user_message,username,is_private):
 
 
 def run_discord_client():
-    TOKEN = 'MTEwOTMzNDE2NzEzODg2NTIxNA.G0TbEh.8tEytxkuWSNGz9ZkS37prb0uropJSKqtO0EsQQ'
+    TOKEN = '***'
     #what is discord.client
     #what are intents
     client = commands.Bot(command_prefix = '!', intents = discord.Intents.all())
@@ -54,6 +54,7 @@ def run_discord_client():
         # amson_button = discord.ui.Button(label = "This is what amson is doing soon", url = "https://www.youtube.com/watch?v=xjkWcjeRAN4")
         auspost_label_button = discord.ui.Button(label = "Start Making Shipping Label", url = "https://auspost.com.au/mypost-business/shipping-and-tracking/orders/add/retail")
         view1.add_item(auspost_label_button)
+        view1.add_item(rick_button)
         # view1.add_item(amson_button)
         await interaction.response.send_message(content = "Here's my button menu", view = view1)
 
